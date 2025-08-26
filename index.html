@@ -11,36 +11,50 @@
 		/>
 		<!-- Tailwind CDN -->
 		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		<!-- CSS File -->
+		<link rel="stylesheet" href="Style/styles.css" />
 		<title>Payoo Mobile Banking App</title>
 	</head>
 	<body>
-		<div class="screen bg-[#F4F5F7] h-[100vh] flex justify-center items-center">
-			<form
-				class="border-2 border-red-500 bg-white rounded-3xl p-8 w-[25.125rem] flex flex-col gap-4"
+		<div
+			class="screen bg-[#F4F5F7] h-[100vh] flex flex-col justify-center items-center outfit-font"
+		>
+			<div
+				class="w-[19.75rem] h-[8.3125rem] bg-[url(assets/bg.png)] flex justify-center items-center"
 			>
+				<img class="w-" src="assets/Group.png" alt="" />
+			</div>
+
+			<form class="bg-white rounded-3xl p-8 w-[25.125rem] flex flex-col gap-4">
 				<div class="flex flex-col gap-3">
-					<label for="">Mobile Number</label>
+					<label class="text-[1rem] font-medium" for="">Mobile Number</label>
 
 					<input
+						id="mobileNo"
 						type="text"
 						placeholder="Enter Your Number"
-						class="input bg-[#f4f5f7] rounded-4xl h-[3.25rem] w-full"
+						class="input bg-[#f4f5f7] rounded-4xl h-[3.25rem] w-full text-[1rem] font-light border-0"
 					/>
 				</div>
 				<div class="flex flex-col gap-3">
-					<label for="">4 Digit Pin</label>
+					<label class="text-[1rem] font-medium" for="">4 Digit Pin</label>
 
 					<input
+						id="pinNo"
 						type="text"
 						placeholder="Enter 4 Digit Pin"
-						class="input bg-[#f4f5f7] rounded-4xl h-[3.25rem] w-full"
+						class="input bg-[#f4f5f7] rounded-4xl h-[3.25rem] w-full text-[1rem] font-light border-0"
 					/>
 				</div>
 
-				<button class="btn w-full rounded-4xl bg-[#0874F2] h-[3.25rem]">
-					Primary
+				<button
+					id="login-btn"
+					class="btn w-full rounded-4xl bg-[#0874F2] h-[3.25rem] text-white text-[1.25rem] font-semibold"
+				>
+					Login
 				</button>
 			</form>
 		</div>
+		<script src="script.js"></script>
 	</body>
 </html>
